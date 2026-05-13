@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Operadores JavaScript</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFF9D2;
+        }
+        h1 { color: #1E104E; border-bottom: 2px solid #FF653F; padding-bottom: 10px; }
+        h2 { color: #452E5A; margin-top: 30px; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #FFF9D2;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th { background-color: #452E5A; color: FFF9D2; }
+        tr:hover { background-color: #fff; }
+        
+        code {
+            background-color: #fff;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #d63384;
+        }
+        .container {
+            background: #F3BE7A;
+            padding: 30px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Operadores JavaScript</h1>
+    <p>Os operadores são usados para atribuir valores, comparar valores, executar operações aritméticas e muito mais.</p>
+
+    <h2>1. Operadores Aritméticos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Operador</th>
+                <th>Descrição</th>
+                <th>Exemplo (y = 5)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>+</code></td>
+                <td>Adição</td>
+                <td>x = y + 2 (x = 7)</td>
+            </tr>
+            <tr>
+                <td><code>-</code></td>
+                <td>Subtração</td>
+                <td>x = y - 2 (x = 3)</td>
+            </tr>
+            <tr>
+                <td><code>*</code></td>
+                <td>Multiplicação</td>
+                <td>x = y * 2 (x = 10)</td>
+            </tr>
+            <tr>
+                <td><code>/</code></td>
+                <td>Divisão</td>
+                <td>x = y / 2 (x = 2.5)</td>
+            </tr>
+            <tr>
+                <td><code>%</code></td>
+                <td>Módulo (Resto da divisão)</td>
+                <td>x = y % 2 (x = 1)</td>
+            </tr>
+            <tr>
+                <td><code>**</code></td>
+                <td>Exponenciação</td>
+                <td>x = y ** 2 (x = 25)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Operadores de Atribuição</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Operador</th>
+                <th>Exemplo</th>
+                <th>Equivalente a</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>=</code></td>
+                <td>x = y</td>
+                <td>x = y</td>
+            </tr>
+            <tr>
+                <td><code>+=</code></td>
+                <td>x += y</td>
+                <td>x = x + y</td>
+            </tr>
+            <tr>
+                <td><code>-=</code></td>
+                <td>x -= y</td>
+                <td>x = x - y</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Operadores de Comparação</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Operador</th>
+                <th>Descrição</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>==</code></td>
+                <td>Igual a (valor)</td>
+                <td>5 == "5" (true)</td>
+            </tr>
+            <tr>
+                <td><code>===</code></td>
+                <td>Estritamente igual (valor e tipo)</td>
+                <td>5 === "5" (false)</td>
+            </tr>
+            <tr>
+                <td><code>!=</code></td>
+                <td>Diferente</td>
+                <td>5 != 8 (true)</td>
+            </tr>
+            <tr>
+                <td><code>&gt;</code></td>
+                <td>Maior que</td>
+                <td>5 &gt; 2 (true)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Operadores Lógicos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Operador</th>
+                <th>Descrição</th>
+                <th>Exemplo (se x=6, y=3)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>&&</code></td>
+                <td>E (AND) lógico</td>
+                <td>(x < 10 && y > 1) é true</td>
+            </tr>
+            <tr>
+                <td><code>||</code></td>
+                <td>OU (OR) lógico</td>
+                <td>(x == 5 || y == 5) é false</td>
+            </tr>
+            <tr>
+                <td><code>!</code></td>
+                <td>NÃO (NOT) lógico</td>
+                <td>!(x == y) é true</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
